@@ -1,0 +1,166 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>梦境边缘 | Fengsong&#39;s Page</title>
+<link rel="shortcut icon" href="https://fengsong.org/favicon.ico?v=1677252050585">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fengsong.org/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="梦境边缘 | Fengsong&#39;s Page - Atom Feed" href="https://fengsong.org/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="近日夜里杂梦丛生，白天上班有些犯困，有时候就在想，梦究竟意味着什么？我常常相信梦是某种暗示，并不是一种迷信，而是大脑潜意识基于当前处境以及一系列趋利避害的判断杂糅形成的意识流。很多时候，可能这种意识是混乱而无序的，但如果找到了一定的规律，我..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://fengsong.org">
+  <img class="avatar" src="https://fengsong.org/images/avatar.png?v=1677252050585" alt="">
+  </a>
+  <h1 class="site-title">
+    Fengsong&#39;s Page
+  </h1>
+  <p class="site-description">
+    日常杂记
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              梦境边缘
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-10-26
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>近日夜里杂梦丛生，白天上班有些犯困，有时候就在想，梦究竟意味着什么？我常常相信梦是某种暗示，并不是一种迷信，而是大脑潜意识基于当前处境以及一系列趋利避害的判断杂糅形成的意识流。很多时候，可能这种意识是混乱而无序的，但如果找到了一定的规律，我们很可能能够利用梦境来看透自己的真实想法。是的，由于大脑的自我保护机制，有一些真实想法在清醒的时候可能根本无法被人察觉，而在梦境中可能会被有意识或无意识的揭露而展现。我不禁思考，梦境的边缘，究竟是什么呢？<br>
+依我看来，梦境的边缘是自我保护的高墙巨幕投映着自我暗示的黑白无字幕默片。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://fengsong.org/O45G9-8EM/">
+              <h3 class="post-title">
+                艺术的边界
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  使用 Github Page 和 Gridea 构建
+  <a class="rss" href="https://fengsong.org/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

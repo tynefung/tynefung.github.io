@@ -1,0 +1,165 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>人生艺术家 | Fengsong&#39;s Page</title>
+<link rel="shortcut icon" href="https://fengsong.org/favicon.ico?v=1677252050585">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fengsong.org/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="人生艺术家 | Fengsong&#39;s Page - Atom Feed" href="https://fengsong.org/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="长大后很少再对人生的意义进行思考，多半是由于忙于工作和生活，也很少再会发呆或是做白日梦。高度的秩序和机械的流程开始占据着大部分时间，生命之熵开始减少，却也愈来愈觉得生活的美学也在跟着丧失。也是从最近几年，开始真心地接受人生的不完美，甚至认为..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://fengsong.org">
+  <img class="avatar" src="https://fengsong.org/images/avatar.png?v=1677252050585" alt="">
+  </a>
+  <h1 class="site-title">
+    Fengsong&#39;s Page
+  </h1>
+  <p class="site-description">
+    日常杂记
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              人生艺术家
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-02-24
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>长大后很少再对人生的意义进行思考，多半是由于忙于工作和生活，也很少再会发呆或是做白日梦。高度的秩序和机械的流程开始占据着大部分时间，生命之熵开始减少，却也愈来愈觉得生活的美学也在跟着丧失。也是从最近几年，开始真心地接受人生的不完美，甚至认为不完美是一种美。这和孩童时期的忍受艰难是不同的，这种接受之中，并没有任何的怨天尤人或者自怨自艾，而是一种淡薄的接受，是一种理解、宽容和释然。因此，在对过去的和解和对当下程式化生活的一丝顾虑中，总萌生出渴望追求改变和突破的想法。而这种对改变的主观践行，在一定意义上也形成了一种“在结果上可预知的螺旋式上升”与“在过程上不可预知的波浪式前进”相结合的人生表演艺术。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://fengsong.org/yqi35vKIX/">
+              <h3 class="post-title">
+                玻璃牢笼
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  使用 Github Page 和 Gridea 构建
+  <a class="rss" href="https://fengsong.org/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

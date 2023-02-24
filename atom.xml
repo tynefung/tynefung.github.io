@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://fengsong.org</id>
+    <title>Fengsong&apos;s Page</title>
+    <updated>2023-02-24T15:20:53.789Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://fengsong.org"/>
+    <link rel="self" href="https://fengsong.org/atom.xml"/>
+    <subtitle>日常杂记</subtitle>
+    <logo>https://fengsong.org/images/avatar.png</logo>
+    <icon>https://fengsong.org/favicon.ico</icon>
+    <rights>All rights reserved 2023, Fengsong&apos;s Page</rights>
+    <entry>
+        <title type="html"><![CDATA[人生艺术家]]></title>
+        <id>https://fengsong.org/ZAh69cq3L/</id>
+        <link href="https://fengsong.org/ZAh69cq3L/">
+        </link>
+        <updated>2023-02-24T14:52:57.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[玻璃牢笼]]></title>
+        <id>https://fengsong.org/yqi35vKIX/</id>
+        <link href="https://fengsong.org/yqi35vKIX/">
+        </link>
+        <updated>2022-11-13T11:56:43.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[孤岛]]></title>
+        <id>https://fengsong.org/KfyzfviKF/</id>
+        <link href="https://fengsong.org/KfyzfviKF/">
+        </link>
+        <updated>2022-11-03T13:54:21.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[梦境边缘]]></title>
+        <id>https://fengsong.org/AC6WRMlNH/</id>
+        <link href="https://fengsong.org/AC6WRMlNH/">
+        </link>
+        <updated>2022-10-26T12:54:43.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[艺术的边界]]></title>
+        <id>https://fengsong.org/O45G9-8EM/</id>
+        <link href="https://fengsong.org/O45G9-8EM/">
+        </link>
+        <updated>2022-10-23T12:32:41.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[旅人]]></title>
+        <id>https://fengsong.org/3mwqV6V6Z/</id>
+        <link href="https://fengsong.org/3mwqV6V6Z/">
+        </link>
+        <updated>2022-10-19T14:25:26.000Z</updated>
+    </entry>
+</feed>
